@@ -3,7 +3,7 @@
 $user="root";
 $pass="";
 $server="localhost";
-$dbname="dbtrimi";
+$dbname="testddb";
 
 try{
     $conn=new PDO("mysql:host=$server;dbname=$dbname",$user,$pass);
