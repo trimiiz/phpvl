@@ -9,7 +9,7 @@
     
 <?php
     include_once("config.php");
-    $getUsers=$conn->prepare("SELECT * FROM user");
+    $getUsers=$conn->prepare("SELECT * FROM users");
     $getUsers->execute();
     $users=$getUsers->fetchAll();
 ?>
@@ -18,7 +18,7 @@
     <tr>
         <th>ID</th>
         <th>Name</th>
-        <th>Surname</th>
+        <th>username</th>
         <th>Email</th>
     </tr>
     <?php 
@@ -27,7 +27,7 @@
     <tr>
         <td> <?= $user['id']?></td>
         <td> <?= $user['name']?></td>
-        <td> <?= $user['surname']?></td>
+        <td> <?= $user['username']?></td>
         <td> <?= $user['email']?></td>
         <td><?= "<a href='delete.php?id=$user[id]'>Delete</a> | <a href='edit.php?id=$user[id]'>Update</a>" ?></td>
     </tr>
