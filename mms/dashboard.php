@@ -127,9 +127,7 @@
                 <td><?php echo $user_data['emri']; ?></td>
                 <td><?php echo $user_data['username']; ?></td>
                 <td><?php echo $user_data['email']; ?></td>
-                <!-- If we want to update a user we need to link into editUsers.php -->
                 <td><a href="editUsers.php?id=<?= $user_data['id'];?>">Update</a></td>
-                  <!-- If we want to delete a user we need to link into deleteUsers.php -->
                 <td><a href="deleteUsers.php?id=<?= $user_data['id'];?>">Delete</a></td>
               </tr>
               
